@@ -18,7 +18,11 @@ body{
     width: 200px;
     height: 200px;
     border-radius: 15px;
+}
 
+#loginkep:hover{
+    box-shadow: 6px 6px;
+    transition : box-shadow 1.3s;
 }
 
 #loginform {
