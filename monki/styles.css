@@ -88,6 +88,7 @@ main {
     }
     
 }
+
 @keyframes csusziMajom
 {
     0% 
@@ -98,6 +99,22 @@ main {
     100% {
         /* transform: translateY(0); */
         /* height: 200px; */
+    }
+    
+}
+
+@keyframes ujMajom
+{
+    0% 
+    {
+        /* transform: translateX(-10vw); */
+        transform: scale3d(1, 0, 1);
+        height: 0;
+    }
+    100% {
+        /* transform: translateX(0); */
+        transform: scale3d(1, 1, 1);
+        height: 230px;
     }
     
 }
