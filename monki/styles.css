@@ -102,7 +102,7 @@ main {
     
 }
 
-li {
+.monkeyList li {
     display: flex;
     align-items: center;
     /* margin-top: 50px; */
@@ -117,14 +117,14 @@ li {
     margin: 0;
 }
 
-li ~ li {
+.monkeyList li ~ li {
     /* transform: translateY(130px);
     transition: transform 1s ease-in-out; */
     /* animation: csusziMajom .2s ease-out forwards; */
     /* animation-iteration-count: infinite; */
 }
 
-li:nth-child(1){
+.monkeyList li:nth-child(1){
     /*transform: translateY(-130px);
     transition: transform 1s;*/
     animation: ujMajom .2s forwards;
@@ -132,7 +132,7 @@ li:nth-child(1){
     /* animation: csusziMajom .2s ease-in-out forwards; */
 }
 
-li img{
+.monkeyList li img{
     display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -228,10 +228,14 @@ main button:hover
     height: 230px;
     /* background-color: aliceblue; */
     text-align: left;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
-table, th{
-    /* border: 6px solid black; */
-    /* border-collapse: separate; */
+#statsTable ul{
+    margin-top: 0;
+    list-style-type: "▸ ";
 }
+
+/* td:before {
+    content:"• ";
+} */
