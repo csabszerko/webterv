@@ -119,6 +119,19 @@ main {
     
 }
 
+
+@keyframes fadeIn
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
 .monkeyList li {
     display: flex;
     align-items: center;
@@ -163,6 +176,7 @@ main {
 
 main {
     margin: 160px 80px 80px 80px;
+    animation: fadeIn .3s ease-in-out forwards;
 }
 
 main p {
@@ -198,6 +212,8 @@ main button:hover
     padding: 0;
     float:left;
     margin-right: 15px;
+
+    cursor: url(), grabbing;
 }
 
 #statsTable tr:nth-child(1){
@@ -256,3 +272,10 @@ main button:hover
 /* td:before {
     content:"• ";
 } */
+
+#kerek {
+    height: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
