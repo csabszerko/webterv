@@ -17,35 +17,39 @@ body{
     margin: 7px auto;
     width: 200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 15px;
 
 }
 
 #loginform {
     display: block;
     margin: auto;
-    width: 150px;
+    width: 200px;
     
     
 }
 
 #fieldset{
     margin: auto 0;
-    padding: 0px 0px;
-    border-radius: 5px;
+    padding: 10px 10px;
+    border-radius: 15px;
     
     
 }
 
 #containter{
     animation: beuszas 0.7s ease-in-out forwards;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+
+    
 }
-
-
 
 #hatter {
     margin: auto;
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 500px;
     height: 100vh;
     display: flex;
@@ -61,7 +65,7 @@ body{
     margin: 7px auto;
     width: 150px;
     height:30px;
-    border-radius: 30px;
+    border-radius: 15px;
     text-align: center;
     padding: 0 0;
 }
@@ -76,7 +80,7 @@ body{
     margin: 7px auto;
     width: 150px;
     height:30px;
-    border-radius: 30px;
+    border-radius: 15px;
     text-align: center;
     cursor: pointer;
     background-color: rgb(255, 218, 185);
@@ -106,7 +110,7 @@ body{
     margin: 7px auto;
     width: 150px;
     height:30px;
-    border-radius: 30px;
+    border-radius: 15px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
