@@ -1,6 +1,6 @@
 const myList = (document.querySelector(".monkeyList") ? document.querySelector(".monkeyList") : document.querySelector(".fakeList"));
 const addMonke = document.querySelector(".majomButton");
-const clearMonke = document.getElementById("majomButton1");
+const clearMonke = document.getElementById("clearMajomButton");
 
 var storedInv = localStorage.getItem('inventory');
 
@@ -12,7 +12,7 @@ function kerekMajmot(){
     const img = document.createElement("img");
     img.width = 100;
     img.height=100;
-    img.src="majmok/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
+    img.src="../majmok/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
 
     var nev = (vezNev[Math.floor(Math.random() * vezNev.length)]+" "+kerNev[Math.floor(Math.random() * kerNev.length)]);
 
