@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>buta fasz majmok</title>
-    <link rel="icon" type="imag/png" href="rloi_mc.png">
-    <link rel="stylesheet" href="regisztracio.css"/>
+    <link rel="icon"  href="majmok/rloi_mc.png">
+    <link rel="stylesheet" href="belepes.css"/>
 </head>
 
 
@@ -16,12 +16,16 @@
 <body>
     <div id="hatter" >
         <div id="containter">
-            <img id="loginkep" src="majom.jpg"> <br/><br/>
-            <form id="loginform" method="POST"> 
-                <input class=loginszoveg type="text"  placeholder="Felhasználónév" /> <br/><br/>
-                <input class=loginszoveg type="password"  placeholder="Jelszó" /> <br/><br/>
-                <input class="gomb" type="submit" value="Regisztráció"/> <br/><br/>
-                <input class="gomb" type="reset">
+            <img id="loginkep" src="majmok/majom.jpg"> 
+            <form id="loginform" method="POST" action="stats.html"> 
+                <fieldset id="fieldset">
+                    <legend>Belépés</legend>
+                    <input class=loginszoveg type="text"  placeholder="Felhasználónév" required> 
+                    <input class=loginszoveg type="password"  placeholder="Jelszó" required> 
+                    <input class="gomb" type="submit" value="Regisztráció" style="background-color: rgb(255, 184, 52);"> 
+                    <input class="gomb" type="reset" style="background-color: crimson;"> 
+                    <a id="reg" class="gomb" href="index.html" style="background-color: #04AA6D;">Bejelentkezés</a>
+                </fieldset>
             </form>
         </div>
     </div>    
