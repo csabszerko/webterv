@@ -12,7 +12,7 @@ function kerekMajmot(){
     const img = document.createElement("img");
     img.width = 100;
     img.height=100;
-    img.src="majom" + (Math.floor(Math.random() * 21) +1)+ ".jpg";
+    img.src="majmok/majom" + (Math.floor(Math.random() * 21) +1)+ ".jpg";
 
     var nev = (vezNev[Math.floor(Math.random() * vezNev.length)]+" "+kerNev[Math.floor(Math.random() * kerNev.length)]);
 
