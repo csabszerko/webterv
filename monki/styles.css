@@ -10,6 +10,7 @@
     height: 80px;
     /* vertical-align: middle; */
     justify-content: center;
+
 }
 
 .navbar a {
@@ -127,6 +128,7 @@ li:nth-child(1){
     /*transform: translateY(-130px);
     transition: transform 1s;*/
     animation: ujMajom .2s forwards;
+    animation-iteration-count: 1;
     /* animation: csusziMajom .2s ease-in-out forwards; */
 }
 
@@ -163,4 +165,73 @@ main button {
 main button:hover
 {
     opacity: 0.8;
+}
+
+#statsTable{
+    /* background-color: red; */
+}
+
+#statsTable img{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 200px;
+    width: 200px;
+    border: 6px solid black;
+    padding: 0;
+    float:left;
+    margin-right: 15px;
+}
+
+#statsTable tr:nth-child(1){
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    /* white-space: nowrap;
+    width:fit-content; */
+    height: 100px;
+    /* animation: ujMajom .2s ease-out forwards; */
+    font-size: 50px;
+    /* background-color: aliceblue; */
+    padding: 0;
+    margin: 0;
+}
+
+#statsTable tr ~ tr{
+    display: flex;
+    align-items: center;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
+    /* white-space: nowrap;
+    width:fit-content; */
+    height: 230px;
+    /* animation: ujMajom .2s ease-out forwards; */
+    font-size: 50px;
+    /* background-color: aliceblue; */
+    padding: 0;
+    margin: 0;
+}
+
+#statsTable td ~ td, th ~ th{
+    border-left: 6px solid black;
+    padding-left: 40px;
+}
+
+#statsTable th{
+    height: 100px !important;
+    color: chocolate;
+}
+
+#statsTable th, td {
+    min-width: 250px;
+    height: 230px;
+    /* background-color: aliceblue; */
+    text-align: left;
+    vertical-align: middle;
+}
+
+table, th{
+    /* border: 6px solid black; */
+    /* border-collapse: separate; */
 }
