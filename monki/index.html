@@ -1,20 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Homepage</title>
+    <title>buta fasz majmok</title>
+    <link rel="icon"  href="majmok/rloi_mc.png">
+    <link rel="stylesheet" href="belepes.css"/>
 </head>
+
+
+
+
+
 <body>
-    <nav class="navbar">
-        <div class="menus">
-        <a href="inventory.html">Raktár</a>
-        <a href="wheel.html">Szerencsekerék</a>
-        <a href="stats.html">Statisztikák</a>
-        </nav>
+    <div id="hatter" >
+        <div id="containter">
+            <img id="loginkep" src="majmok/majom.jpg"> 
+            <form id="loginform" method="POST" action="index.html"> 
+                <fieldset id="fieldset">
+                    <legend>Belépés</legend>
+                    <input class=loginszoveg type="text"  placeholder="Felhasználónév" required> 
+                    <input class=loginszoveg type="password"  placeholder="Jelszó" required> 
+                    <input class="gomb" type="submit" value="Bejelentkezés" style="background-color: #04AA6D;"> 
+                    <input class="gomb" type="reset" style="background-color: crimson;"> 
+                </fieldset>
+            </form>
+            <a id="reg" class="gomb" href="regisztracio.html" style="background-color: rgb(255, 184, 52);">Regisztráció</a>
+        </div>
+    </div>    
 </body>
+
 </html>
