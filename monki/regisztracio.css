@@ -1,0 +1,92 @@
+@keyframes beuszas{
+    0%{
+        transform: translate(0, 100vh);
+    }
+    100%{transform: translate(0,0);}
+}
+
+body{
+    background-color:white;
+    font-family: sans-serif;
+    margin: 0;
+    
+}
+
+#loginkep {
+    
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+#loginform {
+    display: block;
+    
+    margin: auto;
+    width: 150px;
+    height: 140px;
+    
+}
+
+#containter{
+    animation: beuszas 0.7s ease-in-out forwards;
+}
+
+
+
+#hatter {
+    margin: auto;
+    background-color: bisque;
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+
+
+.loginszoveg{
+    border:0;
+    position:absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 150px !important;
+    height:30px !important;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0 0;
+}
+
+.gomb {
+    border:0;
+    position:absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 150px;
+    height:30px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gomb:hover {
+    background-color:powderblue ;
+    transition: background-color 0.3s;
+    
+}
+
+.gomb:active {
+    background-color:rgb(83, 206, 223) ;
+}
+
+
+
+
