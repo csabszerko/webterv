@@ -16,16 +16,44 @@
         video, audio {
             display:none;
         }
+        body, html{
+            height: 99%;
+            margin: 0 !important; 
+            padding: 0 !important;
+            overflow: hidden;
+            background-color:rgb(255, 245, 236);
+        }
         main{
-            background-color: white;
+            /* background-color: white; */
+        }
+        header{
+            display: none;
         }
         .navbar{
             display: none;
         }
-        em{
-            color:darkgray;
+        #homepagemain p em{
+            color:black;
         }
-
+        strong{
+            font-size: 50px;
+        }
+        strong ~ strong
+        {
+            font-size: 30px;
+        }
+        p{
+            padding-left: 100px;
+            padding-right: 100px;
+            width: 500px;
+            font-size: 10px;
+            background-color:rgb(255, 245, 236);
+        }
+        #homepagemain p:last-of-type{
+            display: none;
+            page-break-before:always;
+        }
+        
     }
 
 </style>
@@ -54,6 +82,10 @@
             (Ez ideiglenes és csak demonstrációs célt szolgál.)
             Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <em>Mókás Tények</em> fület!
             Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
+        </p>
+
+        <p>
+            A majmok szeleburdi neveit az alábbihoz hasonló videók inspirálták!
         </p>
 
         <video controls width="500" >

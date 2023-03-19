@@ -2,6 +2,8 @@ const myList = (document.querySelector(".monkeyList") ? document.querySelector("
 const addMonke = document.querySelector(".majomButton");
 const clearMonke = document.getElementById("clearMajomButton");
 
+const pop = new Audio("../hang/pop1.flac");
+
 var storedInv = localStorage.getItem('inventory');
 
 const vezNev = ["Lápi","Kapolcs","Illés","Virág","Gelencsér", "Lakatos", "Bagacsi", "Lopodi", "Raffai", "Zsoldos", "Miksi", "Kab", "Pap","Budai","Foltos","Lantos","Lapp","Mondok","Pupák","Sonkolyos","Csápi","Kalapos","Galamb","Rozs","Mészöly"];
@@ -53,6 +55,8 @@ if(addMonke)
 {
     addMonke.addEventListener("click", function(e) {
         // addMonke.innerText="meg";
+        pop.load();
+        pop.play();
         kerekMajmot(0);
         
     });
@@ -63,6 +67,8 @@ if(clearMonke)
     clearMonke.addEventListener("click", function(e) {
         // clearMonke.innerText="rip";
         localStorage.clear();
+        pop.load();
+        pop.play();
         storedInv = "";
         LoadInv();
     });

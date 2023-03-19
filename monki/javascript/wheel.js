@@ -2,6 +2,7 @@ let nyertNev ="ezt a majmot nyerted";
 var kepId = 1;
 
 (function(){
+    const pop = new Audio("../hang/pop1.flac");
     const wheel = document.getElementById("kerek");
     const spinBtn = document.getElementById("spinButton");
     // const resultDiv = document.querySelector(".result");
@@ -22,6 +23,8 @@ var kepId = 1;
         console.log(deg%360);
         console.log(kepId);
         
+        pop.load();
+        pop.play();
         kerekMajmot(kepId);
     });
 
@@ -35,6 +38,9 @@ var kepId = 1;
         // resultContainerDiv.removeChild(resultDiv);
 
         empty(resultContainerDiv);
+
+        pop.load();
+        pop.play();
 
         const resultDiv = document.createElement("div");
         resultDiv.classList.add("result");
