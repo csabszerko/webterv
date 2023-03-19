@@ -17,9 +17,9 @@ function kerekMajmot(ujKepId){
     img.height=100;
     if(ujKepId==0)
     {
-        img.src="../majmok/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
+        img.src="../kepek/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
     }else{
-        img.src="../majmok/majom" + (ujKepId)+ ".jpg";
+        img.src="../kepek/majom" + (ujKepId)+ ".jpg";
     }
 
     var nev = (vezNev[Math.floor(Math.random() * vezNev.length)]+" "+kerNev[Math.floor(Math.random() * kerNev.length)]);

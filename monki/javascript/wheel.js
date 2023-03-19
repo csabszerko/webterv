@@ -46,7 +46,7 @@ var kepId = 1;
         resultDiv.classList.add("result");
         resultContainerDiv.appendChild(resultDiv);
 
-        resultDiv.innerHTML = '<img src="../majmok/majom' + kepId + '.jpg">'
+        resultDiv.innerHTML = '<img src="../kepek/majom' + kepId + '.jpg">'
         + '<p>' + nyertNev + ' személyesen' + '</p>';
         // resultDiv.innerHTML = "xds";
         nyeremenyDiv.innerHTML="Nyereményed:"
