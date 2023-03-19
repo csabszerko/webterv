@@ -29,17 +29,19 @@
 }
 
 #logoutBtn{
-    position: absolute;
+    /* position: absolute; */
     display: flex;
-    right: 0;
+    /* right: 0; */
     height: 40px;
     margin: 0 auto;
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px;
     clear: auto;
 }
 
 #logoutBtn:hover{
     background-color: crimson;
+    color: white;
+    /* border-bottom: 6px solid crimson; */
 }
 
 .navbar a {
@@ -60,7 +62,7 @@
 }
 
 .navbar a:hover{
-    background-color: rgb(253, 209, 170);
+    background-color: rgb(255, 208, 168);
     color: black;
     border-radius: 15px;
     transition: border-radius, .3s ease-in-out;
