@@ -8,7 +8,7 @@
     <link rel="icon"  href="../majmok/rloi_mc.png">
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Wheel</title>
+    <title>Szerencsekerék</title>
 </head>
 <body>
     <nav class="navbar">
@@ -20,12 +20,18 @@
         </div>
     </nav>
     <main>
-        <div>
+        <div id="kerekContainer">
+            <img src="../majmok/mmcNyil.png" id="nyil">
             <img src="../majmok/majomkerek.png" id="kerek">
         </div>
-        <button class="majomButton">majmot akarok</button>
+        <button id="spinButton">Pörgetés</button>
+        <div class="nyeremeny"></div>
+        <div class="resultContainer">
+            <!-- <div class="result"></div> -->
+        </div>
         <ul class="fakeList"></ul>
     </main>
     <script src="../javascript/inv.js"></script>
+    <script src="../javascript/wheel.js"></script>
 </body>
 </html>
