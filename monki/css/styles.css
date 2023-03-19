@@ -18,7 +18,7 @@
     /* text-align: center; */
     float:left;
     display: flex;
-    margin: auto 0;
+    margin: 0 0;
     padding: 20px 20px;
     text-decoration: none;
 
@@ -169,6 +169,7 @@ main {
     height: 200px;
     width: 200px;
     border: 6px solid black;
+    border-radius: 15px;
     padding: 0;
     float:left;
     margin-right: 15px;
@@ -221,6 +222,7 @@ main button:hover
     height: 200px;
     width: 200px;
     border: 6px solid black;
+    border-radius: 15px;
     padding: 0;
     float:left;
     margin-right: 15px;
@@ -241,6 +243,11 @@ main button:hover
     /* background-color: aliceblue; */
     padding: 0;
     margin: 0;
+}
+
+#statsTable tr:nth-child(1) th{
+    display: flex;
+    align-items: center;
 }
 
 #statsTable tr ~ tr{
