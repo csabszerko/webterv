@@ -74,7 +74,7 @@ body{
 #hatter {
     margin: auto;
     background-color: bisque; 
-    width: 500px;
+    width: 330px;
     display: flex;
     flex-direction: column;
     justify-content: center;
