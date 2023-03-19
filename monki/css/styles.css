@@ -444,8 +444,9 @@ main button:hover
     justify-content: center;
 }
 
-video{
+video~video{
     margin:auto;
+    margin-top: 25px;
     
 }
 
