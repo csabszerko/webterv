@@ -119,12 +119,8 @@ body{
     background-color:rgb(253, 209, 170) ;
     transition: background-color 0.3s;
     opacity: 0.8;
-    
 }
 
-.gomb:active {
-    background-color:rgb(83, 206, 223) ;
-}
 
 .nobg{
     background: none;
