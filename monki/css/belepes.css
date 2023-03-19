@@ -33,7 +33,7 @@ body{
 }
 
 #loginkep:hover{
-    box-shadow: 0 6px 6px grey;
+    box-shadow: 0 6px 6px lightgrey;
     transition : box-shadow 0.3s;
 }
 
@@ -63,16 +63,25 @@ body{
     
 }
 
+#kulso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #hatter {
     margin: auto;
     background-color: bisque; 
     width: 500px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    height:50vh;
+    border-radius: 15px;
 
 }
 
