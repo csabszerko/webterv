@@ -15,12 +15,16 @@ function kerekMajmot(ujKepId){
     const img = document.createElement("img");
     img.width = 100;
     img.height=100;
-    if(ujKepId==0)
+    if(ujKepId==-1)
     {
         img.src="../kepek/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
-    }else{
+    }else if(ujKepId==0){
+        img.src="../kepek/majom" + 20+ ".jpg";
+    }
+    else if(ujKepId>0){
         img.src="../kepek/majom" + (ujKepId)+ ".jpg";
     }
+
 
     var nev = (vezNev[Math.floor(Math.random() * vezNev.length)]+" "+kerNev[Math.floor(Math.random() * kerNev.length)]);
     // ujNev=nev;
@@ -57,7 +61,7 @@ if(addMonke)
         // addMonke.innerText="meg";
         pop.load();
         pop.play();
-        kerekMajmot(0);
+        kerekMajmot(-1);
         
     });
 }

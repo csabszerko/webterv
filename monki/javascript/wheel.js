@@ -25,7 +25,7 @@ var kepId = 1;
         
         pop.load();
         pop.play();
-        kerekMajmot(kepId);
+        kerekMajmot((kepId==0 ? 20 : kepId));
     });
 
     wheel.addEventListener("transitionend", ()=>{
@@ -46,7 +46,7 @@ var kepId = 1;
         resultDiv.classList.add("result");
         resultContainerDiv.appendChild(resultDiv);
 
-        resultDiv.innerHTML = '<img src="../kepek/majom' + kepId + '.jpg">'
+        resultDiv.innerHTML = '<img src="../kepek/majom' + (kepId==0 ? 20 : kepId) + '.jpg">'
         + '<p>' + nyertNev + ' személyesen' + '</p>';
         // resultDiv.innerHTML = "xds";
         nyeremenyDiv.innerHTML="Nyereményed:"

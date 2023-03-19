@@ -11,53 +11,6 @@
     <title>Főoldal</title>
 </head>
 
-<style>
-    @media print{
-        video, audio {
-            display:none;
-        }
-        body, html{
-            height: 99%;
-            margin: 0 !important; 
-            padding: 0 !important;
-            overflow: hidden;
-            background-color:rgb(255, 245, 236);
-        }
-        main{
-            /* background-color: white; */
-        }
-        header{
-            display: none;
-        }
-        .navbar{
-            display: none;
-        }
-        #homepagemain p em{
-            color:black;
-        }
-        strong{
-            font-size: 50px;
-        }
-        strong ~ strong
-        {
-            font-size: 30px;
-        }
-        p{
-            padding-left: 100px;
-            padding-right: 100px;
-            width: 500px;
-            font-size: 10px;
-            background-color:rgb(255, 245, 236);
-        }
-        #homepagemain p:last-of-type{
-            display: none;
-            page-break-before:always;
-        }
-        
-    }
-
-</style>
-
 <body>
     <nav class="navbar">
         <div class="menus">
@@ -65,7 +18,7 @@
             <a href="inventory.html">Raktár</a>
             <a href="wheel.html">Szerencsekerék</a>
             <a href="stats.html">Mókás tények</a>
-            <a href="index.html".html id="logoutBtn">Kijelentkezés</a>
+            <a href="index.html" id="logoutBtn">Kijelentkezés</a>
         </div>
     </nav>
     <main id="homepagemain">
@@ -89,15 +42,15 @@
             A kepek szeleburdi neveit az alábbiakhoz hasonló videók inspirálták!
         </p>
 
-        <video controls width="500px" >
+        <video controls>
             <source src="../kepek/majomvideo2.mp4">
             Emberunk a barlangfalra irt kerdessel keres
         </video>
-        <video controls width="500px" >
+        <video controls>
             <source src="../kepek/majomvideo3.mp4">
             Emberunk a barlangfalra irt kerdessel keres
         </video>
-        <video controls width="500px" >
+        <video controls>
             <source src="../kepek/video0.mov">
             Emberunk a barlangfalra irt kerdessel keres
         </video>
