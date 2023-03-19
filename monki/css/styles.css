@@ -34,6 +34,9 @@
     margin: 0 0;
     padding: 20px 20px;
     text-decoration: none;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
 
     border-radius: 0px;
     transition: background-color .3s, color .3s, border-radius .3s;
@@ -304,7 +307,7 @@ main button:hover
 }
 
 #kerek {
-    height: 700px;
+    height: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;

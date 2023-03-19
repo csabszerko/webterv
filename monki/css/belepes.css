@@ -152,3 +152,11 @@ body{
     opacity: 0.8;
     
 }
+
+footer{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    opacity: 0.4;
+}
