@@ -3,9 +3,10 @@
     $users = beolvas(); 
     if((isset($_POST["username"]) && trim($_POST["username"]) !== "") && (isset($_POST["password"]) && trim($_POST["password"]) !== ""))
     {
+        // $hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
         foreach($users as &$user) 
             {
-                if($user->username == $_POST["username"] && $user->password == $_POST["password"])
+                if($user->username == $_POST["username"] && password_verify($_POST["password"], $user->password))
                 {
                     $cookie = genCookie();
                     $user->cookie = $cookie;

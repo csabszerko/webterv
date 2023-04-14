@@ -14,7 +14,7 @@
 
         if($_POST["password_confirm"] == $_POST["password"])
         {
-            array_push($users, new User($_POST["username"], $_POST["password"], "inshallah"));
+            array_push($users, new User($_POST["username"], password_hash($_POST["password"], PASSWORD_DEFAULT), "inshallah"));
         }
         else echo "Nem egyezik a 2 jelszó. 🖕🏼";
 

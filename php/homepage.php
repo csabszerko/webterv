@@ -32,7 +32,7 @@
             <a href="./inventory.php">Raktár</a>
             <a href="./wheel.php">Szerencsekerék</a>
             <a href="./stats.php">Mókás tények</a>
-            <a href="../html/index.html" id="logoutBtn">Kijelentkezés</a>
+            <a href="../php/logout.php" id="logoutBtn">Kijelentkezés</a>
         </div>
     </nav>
     <main id="homepagemain">
