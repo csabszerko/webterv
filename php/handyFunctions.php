@@ -70,4 +70,18 @@
         }
         header('Location: /webterv/html/index.html');
     }
+
+    function getUserName()
+    {
+        $username = "";
+        $usercookie = $_COOKIE["kuki"];
+        $users = beolvas();
+        foreach ($users as $user) {
+            if($user->cookie == $usercookie)
+            {
+                $username = $user->username;
+            }
+        }
+        return $username;
+    }
 ?>
