@@ -11,6 +11,7 @@ const kerNev = ["Huba","Kázmér","Illés","Ármin","Krisztián","Tamás", "Ulri
 
 function kerekMajmot(ujKepId){
 
+    myList.innerHTML="";
     const li = document.createElement("li");
     const img = document.createElement("img");
     img.width = 100;

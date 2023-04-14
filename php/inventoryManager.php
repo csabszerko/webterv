@@ -78,6 +78,7 @@
         }
     }
 
+    $invxd = "";
     $LOADINV = false;
     if(isset($_POST["invTartalom"]))
     {
@@ -89,8 +90,8 @@
         {
             if($inventory->username == $username)
             {
-
-                // echo $inventory->inventory;
+                
+                $invxd = $inventory->inventory;
                 $LOADINV = true;
             }
         }
