@@ -40,7 +40,7 @@
     <main>
         <div>
             <button id="clearMajomButton">Raktár ürítése</button>
-            <button class="majomButton">Új random majom felvétele</button>
+            <!-- <button class="majomButton">Új random majom felvétele</button> -->
             <ul class="monkeyList">
                 <?php print(($invxd)); ?>
             </ul>
