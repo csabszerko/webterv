@@ -1,6 +1,4 @@
 <?php
-
-    echo "ez meg mukodik";
     class User
     {
         public $username;
@@ -9,13 +7,11 @@
 
         function __construct($nev, $jelszo, $kuki)
         {
-            this->$username = $nev;
-            this->$password = $jelszo;
-            this->$cookie = $kuki;
+            $this->$username = $nev;
+            $this->$password = $jelszo;
+            $this->$cookie = $kuki;
         }
     }
-
-    echo "ez meg mukodik";
 
     function beolvas()
     {
@@ -23,9 +19,11 @@
         {
             //beolvasom a filet egy tombbe
             $users = array();
-            while (($data = fgetcsv($file, 1000, ",")) !== FALSE) 
+            while ($data = fgetcsv($file, 1000, ",") != FALSE) 
             {
+                echo "ez meg mukodik";
                 array_push($users, new User($data[0], $data[1], $data[2]));
+                echo count($data);
             }
             fclose($file);
             return $users;

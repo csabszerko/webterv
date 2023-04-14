@@ -1,10 +1,7 @@
 <?php
-    echo "ez meg betolt";
     include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-    echo "ez meg betolt";
     $users = beolvas(); 
     echo "ez meg betolt";
-
     if((isset($_POST["username"]) && trim($_POST["username"]) !== "") && (isset($_POST["password"]) && trim($_POST["password"]) !== "") && (isset($_POST["password_confirm"]) && trim($_POST["password_confirm"]) !== ""))
     {
         foreach($users as $user) 
@@ -22,5 +19,4 @@
         }
     }
     kiir($users);
-    echo "ez meg betolt";
 ?>
