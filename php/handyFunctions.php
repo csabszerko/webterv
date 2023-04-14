@@ -1,4 +1,6 @@
 <?php
+
+    echo "ez meg mukodik";
     class User
     {
         public $username;
@@ -13,12 +15,14 @@
         }
     }
 
+    echo "ez meg mukodik";
+
     function beolvas()
     {
         if($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/users.csv", "r") != false)
         {
             //beolvasom a filet egy tombbe
-            $users[] = array();
+            $users = array();
             while (($data = fgetcsv($file, 1000, ",")) !== FALSE) 
             {
                 array_push($users, new User($data[0], $data[1], $data[2]));
