@@ -18,11 +18,11 @@
         <div id="hatter" >
             <div id="containter">
                 <img id="loginkep" src="../kepek/majom.jpg" alt=""> 
-                <form id="loginform" method="POST" action="../html/homepage.html"> 
+                <form id="loginform" method="POST" action="../php/login.php"> 
                     <fieldset id="fieldset">
                         <legend>Belépés</legend>
-                        <input class=loginszoveg type="text"  placeholder="Felhasználónév" required> 
-                        <input class=loginszoveg type="password"  placeholder="Jelszó" required> 
+                        <input class=loginszoveg type="text"  placeholder="Felhasználónév" required name="username"> 
+                        <input class=loginszoveg type="password"  placeholder="Jelszó" required name="password"> 
                         <input class="gomb" type="submit" value="Bejelentkezés" style="background-color: #04AA6D;"> 
                         <input class="gomb" type="reset" style="background-color: crimson;"> 
                         <a id="reg" class="gomb" href="../html/regisztracio.html" style="background-color:coral;">Regisztráció</a>

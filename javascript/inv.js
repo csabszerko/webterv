@@ -2,7 +2,7 @@ const myList = (document.querySelector(".monkeyList") ? document.querySelector("
 const addMonke = document.querySelector(".majomButton");
 const clearMonke = document.getElementById("clearMajomButton");
 
-const pop = new Audio("../hang/pop1.flac");
+// const pop = new Audio("../hang/pop1.flac");
 
 var storedInv = localStorage.getItem('inventory');
 
@@ -59,8 +59,8 @@ if(addMonke)
 {
     addMonke.addEventListener("click", function(e) {
         // addMonke.innerText="meg";
-        pop.load();
-        pop.play();
+        // pop.load();
+        // pop.play();
         kerekMajmot(-1);
         
     });
@@ -71,8 +71,8 @@ if(clearMonke)
     clearMonke.addEventListener("click", function(e) {
         // clearMonke.innerText="rip";
         localStorage.clear();
-        pop.load();
-        pop.play();
+        // pop.load();
+        // pop.play();
         storedInv = "";
         LoadInv();
     });
