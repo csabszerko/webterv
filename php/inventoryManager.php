@@ -50,7 +50,7 @@
         {
             if($inventory->username == $username)
             {
-                $inventory->inventory = $tartalom;
+                $inventory->inventory = $tartalom . $inventory->inventory;
                 writeInventoryFile($inventories);
                 return;
             }
@@ -90,8 +90,8 @@
             if($inventory->username == $username)
             {
 
-                echo $inventory->inventory;
-                // $LOADINV = true;
+                // echo $inventory->inventory;
+                $LOADINV = true;
             }
         }
     }

@@ -42,6 +42,7 @@
             <button id="clearMajomButton">Raktár ürítése</button>
             <button class="majomButton">Új random majom felvétele</button>
             <ul class="monkeyList">
+            <?php if($LOADINV) echo $inventory->inventory; ?>
             </ul>
         </div>
     </main>
