@@ -52,7 +52,18 @@
             Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
         </p>
 
-        <p>
+        <div id="mbcontainer">
+            <div class="messageboard" id="mbdiv">
+                fasz
+            </div>
+
+            <form class="messageboard" action="">
+                <input type="text" id="mbmessage">
+                <input type="submit" id="mbsubmit" value="Küldés">
+            </form>
+        </div>
+
+        <!--<p>
             A majmok szeleburdi neveit az alábbiakhoz hasonló videók inspirálták!
         </p>
 
@@ -67,7 +78,7 @@
         <video controls>
             <source src="../kepek/video0.mov">
             Emberunk a barlangfalra irt kerdessel keres.
-        </video>
+        </video>-->
     </main>
 </body>
 </html>

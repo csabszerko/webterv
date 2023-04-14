@@ -467,9 +467,9 @@ strong~strong{
     line-height: 35px;
 }
 
-#homepagemain p:last-of-type{
+/*#homepagemain p:last-of-type{
     background-color: white;
-    /* color: rgb(248, 195, 148); */
+    /* color: rgb(248, 195, 148); 
     color: crimson;
     padding: 20px 20px;
     border-radius: 15px;
@@ -477,7 +477,7 @@ strong~strong{
     font-weight: bold;
     margin: 0;
     margin-bottom: 25px;
-}
+}*/
 
 #homepagemain em{
     color: gray;
@@ -535,9 +535,32 @@ video~video{
         font-size: 10px;
         background-color:rgb(255, 245, 236);
     }
-    #homepagemain p:last-of-type{
+    /*#homepagemain p:last-of-type{
         display: none;
         page-break-before:always;
-    }
+    }*/
+
+   
     
+}
+
+
+.messageboard {
+    width: 660px;
+    background-color: white;
+    padding: 0 0 0 0;
+    
+}
+
+body #mbmessage {
+    width: 500px;
+    padding-left: 0;
+}
+
+body #mbbutton {
+    width: 50px;
+} 
+
+#mbdiv{
+    height: 500px;
 }
