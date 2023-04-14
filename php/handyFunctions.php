@@ -60,6 +60,7 @@
 
     function checkCookie($cookie)
     {
+        $users = beolvas();
         foreach($users as $user) 
         {
             if($user->cookie == $cookie)

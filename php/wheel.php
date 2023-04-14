@@ -1,8 +1,8 @@
 <?php
     include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-    if(isset($_COOKIES["kuki"]))
+    if(isset($_COOKIE["kuki"]))
     {
-        checkCookie($_COOKIES["kuki"]);
+        checkCookie($_COOKIE["kuki"]);
     }
     else
     {

@@ -1,12 +1,14 @@
 <?php
     include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-    if(isset($_COOKIES["kuki"]))
+    if(isset($_COOKIE["kuki"]))
     {
-        checkCookie($_COOKIES["kuki"]);
+        // echo "ez meg jo";
+        checkCookie($_COOKIE["kuki"]);
     }
     else
     {
         header('Location: /webterv/html/index.html');
+        echo "itt a hiba";
     }
 ?>
 
