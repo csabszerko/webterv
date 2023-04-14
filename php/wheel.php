@@ -1,3 +1,15 @@
+<?php
+    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
+    if(isset($_COOKIES["kuki"]))
+    {
+        checkCookie($_COOKIES["kuki"]);
+    }
+    else
+    {
+        header('Location: /webterv/html/index.html');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +24,12 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="menus">
-        <a href="homepage.html">Főoldal</a>
-        <a href="inventory.html">Raktár</a>
-        <a href="wheel.html" class="current">Szerencsekerék</a>
-        <a href="stats.html">Mókás tények</a>
-        <a href="index.html" id="logoutBtn">Kijelentkezés</a>
+    <div class="menus">
+            <a href="./homepage.php">Főoldal</a>
+            <a href="./inventory.php">Raktár</a>
+            <a href="./wheel.php" class="current">Szerencsekerék</a>
+            <a href="./stats.php">Mókás tények</a>
+            <a href="../html/index.html" id="logoutBtn">Kijelentkezés</a>
         </div>
     </nav>
     <main>
