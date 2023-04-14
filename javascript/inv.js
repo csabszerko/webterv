@@ -41,7 +41,9 @@ function kerekMajmot(ujKepId){
 
 const saveToLocal = ()=>
 {
+    // saveInv();
     localStorage.setItem('inventory', myList.innerHTML);
+
 }
 
 function LoadInv()
@@ -49,6 +51,7 @@ function LoadInv()
     if(myList)
     {
         myList.innerHTML = storedInv;
+        // loadInvPhp();
     }
 }
 
@@ -77,3 +80,23 @@ if(clearMonke)
         LoadInv();
     });
 }
+
+// function saveInv() {
+//     let data = new FormData();
+//     data.append("invTartalom",myList.innerHTML);
+
+//     fetch("/webterv/php/inventoryManager.php",
+//         {
+//             method: "POST",
+//             body: data
+//         }
+//     );
+// }
+
+// function loadInvPhp() {
+//     fetch("/webterv/php/inventoryManager.php",
+//         {
+//             method: "GET",
+//         }
+//     ).then( (response) => {response.text().then((text) => { myList.innerHTML = text;})});
+// }
