@@ -34,7 +34,8 @@ function kerekMajmot(ujKepId){
 
     myList.prepend(li);
 
-    saveToLocal();
+    // saveToLocal();
+    saveInv();
     //nem mindig letezik ez a fuggveny;
     setName(nev);
 }
@@ -55,7 +56,8 @@ function LoadInv()
     }
 }
 
-LoadInv();
+// LoadInv();
+// loadInvPhp();
 
 //addMonke.addEventListener("click", kerekMajmot());
 if(addMonke)
@@ -73,30 +75,32 @@ if(clearMonke)
 {
     clearMonke.addEventListener("click", function(e) {
         // clearMonke.innerText="rip";
-        localStorage.clear();
+
+        // localStorage.clear();
+
         // pop.load();
         // pop.play();
-        storedInv = "";
-        LoadInv();
+
+        // storedInv = "";
+        // LoadInv();
+        myList.innerHTML="";
+        saveInv();
     });
 }
 
-// function saveInv() {
-//     let data = new FormData();
-//     data.append("invTartalom",myList.innerHTML);
+function saveInv() {
+    let data = new FormData();
+    data.append("invTartalom",myList.innerHTML);
 
-//     fetch("/webterv/php/inventoryManager.php",
-//         {
-//             method: "POST",
-//             body: data
-//         }
-//     );
-// }
+    fetch("/webterv/php/inventoryManager.php",
+        {
+            method: "POST",
+            body: data
+        }
+    );
+}
 
-// function loadInvPhp() {
-//     fetch("/webterv/php/inventoryManager.php",
-//         {
-//             method: "GET",
-//         }
-//     ).then( (response) => {response.text().then((text) => { myList.innerHTML = text;})});
+// async function loadInvPhp() {
+//     const response = await fetch("/webterv/php/inventoryManager.php");
+//     myList = await response.text();
 // }

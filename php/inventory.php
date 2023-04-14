@@ -1,5 +1,9 @@
 <?php
     include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
+    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/inventoryManager.php");
+
+    // updateInventory("");
+    // writeInventoryFile(readInventoryFile());
     if(isset($_COOKIE["kuki"]))
     {
         checkCookie($_COOKIE["kuki"]);
@@ -38,22 +42,6 @@
             <button id="clearMajomButton">Raktár ürítése</button>
             <button class="majomButton">Új random majom felvétele</button>
             <ul class="monkeyList">
-                <!-- <li>
-                    <img src="majom1.jpg" alt="" width="100px" height="100px">
-                    Arnold
-                </li>
-                <li>
-                    <img src="majom2.jpg" alt="" width="100px" height="100px">
-                    Roland
-                </li>
-                <li>
-                    <img src="majom3.jpg" alt="" width="100px" height="100px">
-                    Boldizsár
-                </li>
-                <li>
-                    <img src="majom4.jpg" alt="" width="100px" height="100px">
-                    Pataki Béla
-                </li> -->
             </ul>
         </div>
     </main>

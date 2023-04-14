@@ -17,7 +17,7 @@
         function __construct($nev, $tartalom)
         {
             $this->username = $nev;
-            $this->invetory = $tartalom;
+            $this->inventory = $tartalom;
         }
     }
 
@@ -45,13 +45,21 @@
     {
         $username = getUserName();
         $inventories = readInventoryFile();
+        $kokany=0;
         foreach($inventories as &$inventory)
         {
             if($inventory->username == $username)
             {
                 $inventory->inventory = $tartalom;
+                writeInventoryFile($inventories);
+                return;
             }
         }
+        array_push($inventories, new Inventory($username, $tartalom));
+        // if($kokany == count($inventories)){
+            
+        //     $kokany=0;
+        // }
         writeInventoryFile($inventories);
     }
 
@@ -70,6 +78,7 @@
         }
     }
 
+    $LOADINV = false;
     if(isset($_POST["invTartalom"]))
     {
         updateInventory($_POST["invTartalom"]);
@@ -80,7 +89,9 @@
         {
             if($inventory->username == $username)
             {
+
                 echo $inventory->inventory;
+                // $LOADINV = true;
             }
         }
     }
