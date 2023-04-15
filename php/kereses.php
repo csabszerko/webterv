@@ -10,9 +10,8 @@
     //     header('Location: /webterv/html/index.html');
     //     echo "itt a hiba";
     // }
-    $ultraKokany = "keresett felhasználó";
     $invToShow = "";
-    $kokanyCounter=0;
+
     $inventories = readInventoryFile();
     if(isset($_GET["lookUpName"]))
     {
@@ -22,13 +21,8 @@
             {
                 $invToShow = $inventory->inventory;
                 // echo $invToShow;
-            } else $kokanyCounter++;
+            }
         }
-        // if($kokanyCounter = count($inventories))
-        // {
-        //     $invToShow = "Nincs ilyen felhasználó";
-        // }
-        // echo "nincs ilyen felhasznalo";
     }
 ?>
 
