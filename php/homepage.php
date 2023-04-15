@@ -43,14 +43,14 @@
         
         <strong>Az oldal használata</strong>
         <p>
-            A majmok gyűjtését a <img src="../kepek/kerek.png" width="30px" height="30px"> fül alatt kezdheted meg. Egy véletlenszerű majmot nyerhetsz egyedi névvel.
-            A majmod eltárolódik a <img src="../kepek/inventory.png" width="30px" height="30px"> fülben.
+            A majmok gyűjtését a <a href="./wheel.php"><img src="../kepek/kerek.png" width="30px" height="30px"></a> fül alatt kezdheted meg. Egy véletlenszerű majmot nyerhetsz egyedi névvel.
+            A majmod eltárolódik a <a href="./inventory.php"><img src="../kepek/inventory.png" width="30px" height="30px"><a> fülben.
             Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat.
-            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <img src="../kepek/monkey.png" width="30px" height="30px"> fület!
+            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <a href="./stats.php"><img src="../kepek/monkey.png" width="30px" height="30px"><a> fület!
             Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
         </p>
 
-        <div id="mbcontainer">
+        <!--<div id="mbcontainer">
             <div class="messageboard" id="mbdiv">
                 gatya
             </div>
@@ -59,7 +59,7 @@
                 <input type="text" id="mbmessage" name="mbmessage">
                 <input type="submit" id="mbsubmit" value="Küldés">
             </form>
-        </div>
+        </div>-->
 
         <!--<p>
             A majmok szeleburdi neveit az alábbiakhoz hasonló videók inspirálták!
