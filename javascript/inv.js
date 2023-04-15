@@ -14,8 +14,8 @@ function kerekMajmot(ujKepId){
     myList.innerHTML="";
     const li = document.createElement("li");
     const img = document.createElement("img");
-    img.width = 100;
-    img.height=100;
+    img.width = 50;
+    img.height = 50;
     if(ujKepId==-1)
     {
         img.src="../kepek/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
@@ -100,8 +100,3 @@ function saveInv() {
         }
     );
 }
-
-// async function loadInvPhp() {
-//     const response = await fetch("/webterv/php/inventoryManager.php");
-//     myList = await response.text();
-// }

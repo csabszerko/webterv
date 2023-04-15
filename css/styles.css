@@ -120,7 +120,7 @@ main {
     100% {
         /* transform: translateX(0); */
         transform: scale3d(1, 1, 1);
-        height: 230px;
+        height: 175px;
     }
     
 }
@@ -172,9 +172,9 @@ main {
     /* margin-bottom: 50px; */
     /* white-space: nowrap;
     width:fit-content; */
-    height: 230px;
+    height: 175px;
     /* animation: ujMajom .2s ease-out forwards; */
-    font-size: 100px;
+    font-size: 50px;
     /* background-color: aliceblue; */
     padding: 0;
     margin: 0;
@@ -199,8 +199,8 @@ main {
     display: block;
     margin-top: auto;
     margin-bottom: auto;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border: 6px solid black;
     border-radius: 15px;
     padding: 0;
@@ -211,6 +211,9 @@ main {
 #clearMajomButton {
     background-color: crimson;
     /* margin-bottom: 10px; */
+    width: 162px;
+    font-size: 15px;
+    margin-bottom: 7px !important;
 }
 
 .majomButton {
@@ -249,19 +252,30 @@ main button:hover
 
 #statsTable{
     /* background-color: red; */
+    padding-left: 0 !important;
+}
+
+tbody {
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+}
+
+table{
+    border-spacing: 0;
 }
 
 #statsTable img{
     display: block;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 200px;
-    width: 200px;
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    height: 150px;
+    width: 150px;
     border: 6px solid black;
     border-radius: 15px;
     padding: 0;
     float:left;
-    margin-right: 15px;
+    margin-right: 10px;
 
     cursor: url(), grabbing;
 }
@@ -275,7 +289,7 @@ main button:hover
     width:fit-content; */
     height: 100px;
     /* animation: ujMajom .2s ease-out forwards; */
-    font-size: 50px;
+    font-size: 40px;
     /* background-color: aliceblue; */
     padding: 0;
     margin: 0;
@@ -284,27 +298,34 @@ main button:hover
 #statsTable tr:nth-child(1) th{
     display: flex;
     align-items: center;
+    /* width: 300px; */
+}
+#statsTable tr:nth-child(1) th ~ th{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
 }
 
 #statsTable tr ~ tr{
     display: flex;
     align-items: center;
-    /* margin-top: 50px; */
-    /* margin-bottom: 50px; */
     /* white-space: nowrap;
     width:fit-content; */
-    height: 230px;
+    height: 175px;
     /* animation: ujMajom .2s ease-out forwards; */
-    font-size: 50px;
+    font-size: 35px;
     /* background-color: aliceblue; */
     padding: 0;
     margin: 0;
 }
 
 #statsTable td ~ td, th ~ th{
+    display: flex;
+    align-items: center;
     border-left: 6px solid black;
     padding-left: 0;
-    padding-left: 30px;
+    padding-left: 0px;
+    vertical-align: middle;
 }
 
 #statsTable th{
@@ -313,15 +334,15 @@ main button:hover
 }
 
 #statsTable th, td {
-    min-width: 250px;
-    height: 230px;
+    min-width: 175px;
+    height: 175px;
     /* background-color: aliceblue; */
     text-align: left;
     /* vertical-align: middle; */
 }
 
 #statsTable ul{
-    margin-top: 0;
+    /* margin-top: 0; ITT VAN*/ 
     list-style-type: "▸ ";
 }
 

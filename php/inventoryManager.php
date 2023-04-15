@@ -45,7 +45,7 @@
     {
         $username = getUserName();
         $inventories = readInventoryFile();
-        $kokany=0;
+        // $kokany=0;
         foreach($inventories as &$inventory)
         {
             if($inventory->username == $username)
@@ -67,7 +67,7 @@
     {
         if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/inventories.csv", "w")) != false)
         {
-            // echo "ez meg fasz";
+            // echo "ez meg gatya";
             //kiirom a filet a tombbol
 
             foreach($inventories as $inventory) 
@@ -79,7 +79,7 @@
     }
 
     $invxd = "";
-    $LOADINV = false;
+    // $LOADINV = false;
     if(isset($_POST["invTartalom"]))
     {
         updateInventory($_POST["invTartalom"]);
@@ -92,7 +92,7 @@
             {
                 
                 $invxd = $inventory->inventory;
-                $LOADINV = true;
+                // $LOADINV = true;
             }
         }
     }

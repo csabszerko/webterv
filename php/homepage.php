@@ -28,12 +28,11 @@
 <body>
     <nav class="navbar">
         <div class="menus">
-            <a href="./homepage.php" class="current">Főoldal</a>
-            <a href="./inventory.php">Raktár</a>
-            <a href="./wheel.php">Szerencsekerék</a>
-            <a href="./stats.php">Mókás tények</a>
-            <a href="../php/logout.php" id="logoutBtn">Kijelentkezés</a>
-        </div>
+            <a href="./homepage.php" class="current">🏠</a>
+            <a href="./inventory.php">🎒</a>
+            <a href="./wheel.php">🍀</a>
+            <a href="./stats.php">🦧</a>
+            <a href="../php/logout.php" id="logoutBtn">🚪</a>
     </nav>
     <main id="homepagemain">
         <strong>Üdvözöllek!</strong>
@@ -54,7 +53,7 @@
 
         <div id="mbcontainer">
             <div class="messageboard" id="mbdiv">
-                fasz
+                gatya
             </div>
 
             <form class="messageboard" action="">
