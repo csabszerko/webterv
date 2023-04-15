@@ -40,6 +40,7 @@
         <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep">
 
         <p>A felhasználóneved: péter</p>
+        
         <a href=""><em>A fiókod törlése</em></a>
 
     
