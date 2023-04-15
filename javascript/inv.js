@@ -2,6 +2,8 @@ const myList = (document.querySelector(".monkeyList") ? document.querySelector("
 const addMonke = document.querySelector(".majomButton");
 const clearMonke = document.getElementById("clearMajomButton");
 
+var torold = false;
+
 // const pop = new Audio("../hang/pop1.flac");
 
 var storedInv = localStorage.getItem('inventory');
@@ -72,8 +74,11 @@ if(addMonke)
     });
 }
 
+var kokany = 0;
+
 if(clearMonke)
 {
+    
     clearMonke.addEventListener("click", function(e) {
         // clearMonke.innerText="rip";
 
@@ -84,14 +89,50 @@ if(clearMonke)
 
         // storedInv = "";
         // LoadInv();
-        myList.innerHTML="";
-        saveInv();
+
+        // kokany++;
+        // if(kokany==2)
+        // {
+        //     torold=true;
+        //     delInv()
+        //     torold=false;
+        //     kokany=0;
+        //     this.innerHTML("Raktár ürítése");
+        // }
+        switch(kokany){
+            case 0:
+                kokany++;
+                clearMonke.innerText = "Biztos vagy benne?";
+                this.style.backgroundColor = "crimson";
+                break;
+            case 1:
+                myList.innerHTML="";
+                this.style.backgroundColor = "coral";
+                torold=true;
+                delInv()
+                torold=false;
+                kokany=0;
+                clearMonke.innerText ="Raktár ürítése";
+        }
+        // saveInv();
     });
 }
 
 function saveInv() {
     let data = new FormData();
     data.append("invTartalom",myList.innerHTML);
+
+    fetch("/webterv/php/inventoryManager.php",
+        {
+            method: "POST",
+            body: data
+        }
+    );
+}
+
+function delInv() {
+    let data = new FormData();
+    data.append("toroljem",torold);
 
     fetch("/webterv/php/inventoryManager.php",
         {

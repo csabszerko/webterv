@@ -96,4 +96,23 @@
             }
         }
     }
+
+    if(isset($_POST["toroljem"]))
+    {
+        echo $_POST["toroljem"];
+        if($_POST["toroljem"] == true)
+        {
+            $inventories = readInventoryFile();
+            $username = getUserName();
+            foreach($inventories as &$inventory)
+            {
+                if($inventory->username == $username)
+                {
+                    
+                    $inventory->inventory = "";
+                }
+            }
+            writeInventoryFile($inventories);
+        }
+    }
 ?>

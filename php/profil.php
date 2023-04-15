@@ -39,48 +39,18 @@
         
         <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep">
 
-        <p>A felhasználóneved: péter</p>
-        
+        <p id="displayFelNev"><?php print("A felhasználóneved: " . "<span id=actualFelNev>" . getUserName() . "</span>"); ?></p>
+
+        <form id="nevvaltoztatas" method="POST" action="../php/nevChange.php"> 
+            <input class="ujszoveg" type="text"  placeholder="új felhasználónév" required name="newUsername"> 
+            <input class="gomb" type="submit" value="megváltoztat" style="background-color: #04AA6D;" name="nevvaltoztat"> 
+        </form>
+        <form id="jelszovaltoztatas" method="POST" action="../php/jelszoChange.php"> 
+            <input class="ujszoveg" type="password"  placeholder="új jelszó" required name="newPassword">
+            <input class="ujszoveg" type="password"  placeholder="új jelszó újra" required name="newPassword2"> 
+            <input class="gomb" type="submit" value="megváltoztat" style="background-color: #04AA6D;" name="jelszovaltoztat"> 
+        </form>
         <a href=""><em>A fiókod törlése</em></a>
-
-    
-    
-    
-    
-    
-        <!--<strong>Üdvözöllek!</strong>
-        <p>
-            Ez az oldal a majmok gyűjtéséről szól.<br>
-            Az oldalt Kiss Csaba és Masa Roland készítette. 
-        </p>
-        
-        <strong>Az oldal használata</strong>
-        <p>
-            A majmok gyűjtését a <img src="../kepek/kerek.png" width="30px" height="30px"> fül alatt kezdheted meg. Egy véletlenszerű majmot nyerhetsz egyedi névvel.
-            A majmod eltárolódik a <img src="../kepek/inventory.png" width="30px" height="30px"> fülben.
-            Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat.
-            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <img src="../kepek/monkey.png" width="30px" height="30px"> fület!
-            Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
-        </p>
-
-        
-
-        <p>
-            A majmok szeleburdi neveit az alábbiakhoz hasonló videók inspirálták!
-        </p>
-
-        <video controls>
-            <source src="../kepek/majomvideo2.mp4">
-            Emberunk a barlangfalra irt kerdessel keres.
-        </video>
-        <video controls>
-            <source src="../kepek/majomvideo3.mp4">
-            Emberunk a barlangfalra irt kerdessel keres.
-        </video>
-        <video controls>
-            <source src="../kepek/video0.mov">
-            Emberunk a barlangfalra irt kerdessel keres.
-        </video>-->
     </main>
 </body>
 </html>
