@@ -57,8 +57,8 @@
                 fasz
             </div>
 
-            <form class="messageboard" action="">
-                <input type="text" id="mbmessage">
+            <form class="messageboard" action="./messageboard.php" method="POST">
+                <input type="text" id="mbmessage" name="mbmessage">
                 <input type="submit" id="mbsubmit" value="Küldés">
             </form>
         </div>
