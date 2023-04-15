@@ -52,7 +52,7 @@
     /* background-color: crimson; */
     /* border-bottom: 6px solid crimson; */
     /* background-image: url("../kepek/logout.png"); */
-    filter: brightness(.7) invert(.5) sepia(1) hue-rotate(-43deg) saturate(1000%) !important;
+    filter: brightness(.7) invert(.5) sepia(1) hue-rotate(-43deg) saturate(1100%) !important;
     /* transition: saturate, .3s ease-in-out; */
 }
 
