@@ -644,6 +644,30 @@ body #mbbutton {
     padding: 0;
 }
 
+.changeBtn{
+    /* width: 400px; */
+    display: block;
+    background-color: lightblue !important;
+    width: 224px;
+    height: 74px;
+    border: 6px solid black;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.changeBtn:hover{
+    opacity: .8;
+}
+
+/* #changeName{
+    background-color: coral;
+}
+#changePass{
+    background-color: blue;
+} */
+
 #displayFelNev{
     font-weight: bold;
 }

@@ -39,7 +39,9 @@
         
         <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep">
 
-        <p id="displayFelNev"><?php print("A felhasználóneved: " . "<span id=actualFelNev>" . getUserName() . "</span>"); ?></p>
+        <p id="displayFelNev"><?php print("Üdvözöllek " . "<span id=actualFelNev>" . getUserName() . "!</span>"); ?></p>
+        <button id="changeName" class="changeBtn">Névváltoztatás</button>
+        <button id="changePass" class="changeBtn">Jelszóváltoztatás</button>
 
         <form id="nevvaltoztatas" method="POST" action="../php/nevChange.php"> 
             <input class="ujszoveg" type="text"  placeholder="új felhasználónév" required name="newUsername"> 
@@ -52,5 +54,6 @@
         </form>
         <a href=""><em>A fiókod törlése</em></a>
     </main>
+    <script src="../javascript/dataChangeMenu.js"></script>
 </body>
 </html>
