@@ -28,11 +28,11 @@
 <body>
     <nav class="navbar">
         <div class="menus">
-            <a href="./homepage.php" class="current">🏠</a>
-            <a href="./inventory.php">🎒</a>
-            <a href="./wheel.php">🍀</a>
-            <a href="./stats.php">🦧</a>
-            <a href="../php/logout.php" id="logoutBtn">🚪</a>
+            <a href="./homepage.php" title="Főoldal" class="current"><img src="../kepek/haz.png" width="30px" height="30px"></a>
+            <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="30px" height="30px"></a>
+            <a href="./wheel.php" title="Szerencsekerék"><img src="../kepek/kerek.png" width="30px" height="30px"></a>
+            <a href="./stats.php" title="A majmokról"><img src="../kepek/monkey.png" width="30px" height="30px"></a>
+            <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
     </nav>
     <main id="homepagemain">
         <strong>Üdvözöllek!</strong>

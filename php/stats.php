@@ -25,11 +25,11 @@
 <body>
     <nav class="navbar">
         <div class="menus">
-            <a href="./homepage.php">Főoldal</a>
-            <a href="./inventory.php">Raktár</a>
-            <a href="./wheel.php">Szerencsekerék</a>
-            <a href="./stats.php" class="current">Mókás tények</a>
-            <a href="../php/logout.php" id="logoutBtn">Kijelentkezés</a>
+            <a href="./homepage.php" title="Főoldal" ><img src="../kepek/haz.png" width="30px" height="30px"></a>
+            <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="30px" height="30px"></a>
+            <a href="./wheel.php" title="Szerencsekerék"><img src="../kepek/kerek.png" width="30px" height="30px"></a>
+            <a href="./stats.php" title="A majmokról" class="current"><img src="../kepek/monkey.png" width="30px" height="30px"></a>
+            <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
         </div>
     </nav>
     <main>
