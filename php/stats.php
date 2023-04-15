@@ -1,13 +1,13 @@
 <?php
-    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-    if(isset($_COOKIE["kuki"]))
-    {
-        checkCookie($_COOKIE["kuki"]);
-    }
-    else
-    {
-        header('Location: /webterv/html/index.html');
-    }
+    // include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
+    // if(isset($_COOKIE["kuki"]))
+    // {
+    //     checkCookie($_COOKIE["kuki"]);
+    // }
+    // else
+    // {
+    //     header('Location: /webterv/html/index.html');
+    // }
 ?>
 
 <!DOCTYPE html>

@@ -15,10 +15,10 @@
         if($_POST["password_confirm"] == $_POST["password"])
         {
             array_push($users, new User($_POST["username"], password_hash($_POST["password"], PASSWORD_DEFAULT), "inshallah"));
+            header('Location: /webterv/html/index.html');
         }
         else echo "Nem egyezik a 2 jelszó. 🙊";
 
-        header('Location: /webterv/html/index.html');
     }
     kiir($users);
     // echo "ez meg betolt";

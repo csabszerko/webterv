@@ -36,7 +36,7 @@
             <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
     </nav>
     <main id="homepagemain">
-        <strong>Üdvözöllek!</strong>
+        <strong><?php print("Üdvözöllek " . getUserName() ."!")?></strong>
         <p>
             Ez az oldal a majmok gyűjtéséről szól.<br>
             Az oldalt Kiss Csaba és Masa Roland készítette. 

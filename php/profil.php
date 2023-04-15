@@ -32,14 +32,14 @@
             <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="30px" height="30px"></a>
             <a href="./wheel.php" title="Szerencsekerék"><img src="../kepek/kerek.png" width="30px" height="30px"></a>
             <a href="./stats.php" title="A majmokról"><img src="../kepek/monkey.png" width="30px" height="30px"></a>
-            <a href="./profil.php" title="Saját Profil"> <img src="../kepek/profil.png" width="30px" height="30px"></a>   
+            <a href="./profil.php" title="Saját Profil" class="current"> <img src="../kepek/profil.png" width="30px" height="30px"></a>   
             <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
     </nav>
     <main id="homepagemain">
         
         <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep">
 
-        <p id="displayFelNev"><?php print("Üdvözöllek " . "<span id=actualFelNev>" . getUserName() . "!</span>"); ?></p>
+        <p id="displayFelNev"><?php print("Üdvözöllek a profilodon " . "<span id=actualFelNev>" . getUserName() . "!</span>"); ?></p>
         <button id="changeName" class="changeBtn">Névváltoztatás</button>
         <button id="changePass" class="changeBtn">Jelszóváltoztatás</button>
 
