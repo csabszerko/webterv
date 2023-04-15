@@ -7,7 +7,7 @@
             {
                 if($user->username == $_POST["username"])
                 {
-                    echo "A felhasználónév foglalt. 🖕🏼";
+                    echo "A felhasználónév foglalt. 🙈";
                     exit();
                 }
             }
@@ -16,7 +16,7 @@
         {
             array_push($users, new User($_POST["username"], password_hash($_POST["password"], PASSWORD_DEFAULT), "inshallah"));
         }
-        else echo "Nem egyezik a 2 jelszó. 🖕🏼";
+        else echo "Nem egyezik a 2 jelszó. 🙊";
 
         header('Location: /webterv/html/index.html');
     }

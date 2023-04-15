@@ -17,7 +17,7 @@
         function __construct($nev, $tartalom)
         {
             $this->username = $nev;
-            $this->invetory = $tartalom;
+            $this->inventory = $tartalom;
         }
     }
 
@@ -45,13 +45,21 @@
     {
         $username = getUserName();
         $inventories = readInventoryFile();
+        // $kokany=0;
         foreach($inventories as &$inventory)
         {
             if($inventory->username == $username)
             {
-                $inventory->inventory = $tartalom;
+                $inventory->inventory = $tartalom . $inventory->inventory;
+                writeInventoryFile($inventories);
+                return;
             }
         }
+        array_push($inventories, new Inventory($username, $tartalom));
+        // if($kokany == count($inventories)){
+            
+        //     $kokany=0;
+        // }
         writeInventoryFile($inventories);
     }
 
@@ -59,7 +67,7 @@
     {
         if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/inventories.csv", "w")) != false)
         {
-            // echo "ez meg fasz";
+            // echo "ez meg gatya";
             //kiirom a filet a tombbol
 
             foreach($inventories as $inventory) 
@@ -70,6 +78,8 @@
         }
     }
 
+    $invxd = "";
+    // $LOADINV = false;
     if(isset($_POST["invTartalom"]))
     {
         updateInventory($_POST["invTartalom"]);
@@ -80,7 +90,9 @@
         {
             if($inventory->username == $username)
             {
-                echo $inventory->inventory;
+                
+                $invxd = $inventory->inventory;
+                // $LOADINV = true;
             }
         }
     }

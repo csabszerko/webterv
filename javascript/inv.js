@@ -7,14 +7,15 @@ const clearMonke = document.getElementById("clearMajomButton");
 var storedInv = localStorage.getItem('inventory');
 
 const vezNev = ["Lápi","Kapolcs","Illés","Virág","Gelencsér", "Lakatos", "Bagacsi", "Lopodi", "Raffai", "Zsoldos", "Miksi", "Kab", "Pap","Budai","Foltos","Lantos","Lapp","Mondok","Pupák","Sonkolyos","Csápi","Kalapos","Galamb","Rozs","Mészöly"];
-const kerNev = ["Huba","Kázmér","Illés","Ármin","Krisztián","Tamás", "Ulrich", "Herold", "Botond", "Alajos", "Mór", "Szabi", "Leopold","Balambér","Gilbert","Taksony","Habakuk","Tódor","Tóbiás","Juszuf","Barni","Kázmér","Oszvald","Tihamér","عبد المجيد"];
+const kerNev = ["Lambert","Huba","Kázmér","Illés","Ármin","Krisztián","Tamás", "Ulrich", "Herold", "Botond", "Alajos", "Mór", "Szabi", "Leopold","Balambér","Gilbert","Taksony","Habakuk","Tódor","Tóbiás","Juszuf","Barni","Kázmér","Oszvald","Tihamér","عبد المجيد"];
 
 function kerekMajmot(ujKepId){
 
+    myList.innerHTML="";
     const li = document.createElement("li");
     const img = document.createElement("img");
-    img.width = 100;
-    img.height=100;
+    img.width = 50;
+    img.height = 50;
     if(ujKepId==-1)
     {
         img.src="../kepek/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
@@ -34,7 +35,8 @@ function kerekMajmot(ujKepId){
 
     myList.prepend(li);
 
-    saveToLocal();
+    // saveToLocal();
+    saveInv();
     //nem mindig letezik ez a fuggveny;
     setName(nev);
 }
@@ -55,7 +57,8 @@ function LoadInv()
     }
 }
 
-LoadInv();
+// LoadInv();
+// loadInvPhp();
 
 //addMonke.addEventListener("click", kerekMajmot());
 if(addMonke)
@@ -73,30 +76,27 @@ if(clearMonke)
 {
     clearMonke.addEventListener("click", function(e) {
         // clearMonke.innerText="rip";
-        localStorage.clear();
+
+        // localStorage.clear();
+
         // pop.load();
         // pop.play();
-        storedInv = "";
-        LoadInv();
+
+        // storedInv = "";
+        // LoadInv();
+        myList.innerHTML="";
+        saveInv();
     });
 }
 
-// function saveInv() {
-//     let data = new FormData();
-//     data.append("invTartalom",myList.innerHTML);
+function saveInv() {
+    let data = new FormData();
+    data.append("invTartalom",myList.innerHTML);
 
-//     fetch("/webterv/php/inventoryManager.php",
-//         {
-//             method: "POST",
-//             body: data
-//         }
-//     );
-// }
-
-// function loadInvPhp() {
-//     fetch("/webterv/php/inventoryManager.php",
-//         {
-//             method: "GET",
-//         }
-//     ).then( (response) => {response.text().then((text) => { myList.innerHTML = text;})});
-// }
+    fetch("/webterv/php/inventoryManager.php",
+        {
+            method: "POST",
+            body: data
+        }
+    );
+}

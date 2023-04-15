@@ -17,6 +17,6 @@
                 }
             }
     }
-    echo "Hibás felhasználónév és/vagy jelszó.";
+    echo "Hibás felhasználónév és/vagy jelszó. 🦧";
     // header('Location: /webterv/html/index.html');
 ?>

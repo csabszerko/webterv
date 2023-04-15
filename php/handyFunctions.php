@@ -37,7 +37,7 @@
     {
         if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/users.csv", "w")) != false)
         {
-            // echo "ez meg fasz";
+            // echo "ez meg gatya";
             //kiirom a filet a tombbol
 
             foreach($users as $user) 
