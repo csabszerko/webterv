@@ -53,7 +53,7 @@
             <input class="ujszoveg" type="password"  placeholder="új jelszó újra" required name="newPassword2"> 
             <input class="gomb" type="submit" value="megváltoztat" style="background-color: #04AA6D;" name="jelszovaltoztat"> 
         </form>
-        <a href=""><em>A fiókod törlése</em></a>
+        <button id="deleteAcc" class="gomb">Felhasználó Törlése</button>
     </main>
     <script src="../javascript/dataChangeMenu.js"></script>
 </body>

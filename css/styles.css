@@ -694,3 +694,7 @@ body #mbbutton {
     padding: 0;
     margin-right: 10px;
 }
+
+#deleteAcc{
+    background-color: coral;
+}
