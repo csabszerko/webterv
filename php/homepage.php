@@ -43,11 +43,10 @@
         
         <strong>Az oldal használata</strong>
         <p>
-            A majmok gyűjtését a <em>Szerencsekerék</em> fül alatt kezdheted meg. Egy véletlenszerű majmot nyerhetsz egyedi névvel.
-            A majmod bizonyos böngészőkben már most is eltárolódik a <em>Raktárban,</em> de a későbbiekben ott találod majd.
-            A <em>Raktárban</em> egyelőre 2 gomb található, az egyikkel törölheted az eddig megszerzett majmokat, a másikkal generálhatsz új véletlenszerű majmokat.
-            (Ez ideiglenes és csak demonstrációs célt szolgál.)
-            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <em>Mókás Tények</em> fület!
+            A majmok gyűjtését a <img src="../kepek/kerek.png" width="30px" height="30px"> fül alatt kezdheted meg. Egy véletlenszerű majmot nyerhetsz egyedi névvel.
+            A majmod eltárolódik a <img src="../kepek/inventory.png" width="30px" height="30px"> fülben.
+            Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat.
+            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <img src="../kepek/monkey.png" width="30px" height="30px"> fület!
             Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
         </p>
 

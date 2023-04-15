@@ -498,7 +498,7 @@ strong~strong{
 #homepagemain p{
     width: 700px;
     font-size: 25px;
-    line-height: 35px;
+    line-height: 40px;
 }
 
 /*#homepagemain p:last-of-type{
@@ -514,7 +514,7 @@ strong~strong{
 }*/
 
 #homepagemain em{
-    color: gray;
+    color: crimson;
 }
 
 video {
