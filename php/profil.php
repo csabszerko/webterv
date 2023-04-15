@@ -28,15 +28,26 @@
 <body>
     <nav class="navbar">
         <div class="menus">
-            <a href="./stats.php" title="Saját Profil"><img src="../kepek/monkey.png" width="30px" height="30px"></a>    
-            <a href="./homepage.php" title="Főoldal" class="current"><img src="../kepek/haz.png" width="30px" height="30px"></a>
+            <a href="./profil.php" title="Saját Profil"class="current"> <img src="../kepek/profil.png" width="30px" height="30px"></a>    
+            <a href="./homepage.php" title="Főoldal"><img src="../kepek/haz.png" width="30px" height="30px"></a>
             <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="30px" height="30px"></a>
             <a href="./wheel.php" title="Szerencsekerék"><img src="../kepek/kerek.png" width="30px" height="30px"></a>
             <a href="./stats.php" title="A majmokról"><img src="../kepek/monkey.png" width="30px" height="30px"></a>
             <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
     </nav>
     <main id="homepagemain">
-        <strong>Üdvözöllek!</strong>
+        
+        <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep">
+
+        <p>A felhasználóneved: péter</p>
+        <a href=""><em>A fiókod törlése</em></a>
+
+    
+    
+    
+    
+    
+        <!--<strong>Üdvözöllek!</strong>
         <p>
             Ez az oldal a majmok gyűjtéséről szól.<br>
             Az oldalt Kiss Csaba és Masa Roland készítette. 
@@ -53,7 +64,7 @@
 
         
 
-        <!--<p>
+        <p>
             A majmok szeleburdi neveit az alábbiakhoz hasonló videók inspirálták!
         </p>
 

@@ -598,3 +598,10 @@ body #mbbutton {
 #mbdiv{
     height: 500px;
 }
+
+#profilkep{
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}

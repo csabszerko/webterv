@@ -28,6 +28,7 @@
 <body>
     <nav class="navbar">
         <div class="menus">
+            <a href="./profil.php" title="Saját Profil"> <img src="../kepek/profil.png" width="30px" height="30px"></a>   
             <a href="./homepage.php" title="Főoldal" class="current"><img src="../kepek/haz.png" width="30px" height="30px"></a>
             <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="30px" height="30px"></a>
             <a href="./wheel.php" title="Szerencsekerék"><img src="../kepek/kerek.png" width="30px" height="30px"></a>
