@@ -110,7 +110,7 @@ main {
 }
 
 .monkeyList {
-    /* width: 500px; */
+    width: 700px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -181,6 +181,7 @@ main {
 .monkeyList li {
     display: flex;
     align-items: center;
+    text-align: left;
     /* margin-top: 50px; */
     /* margin-bottom: 50px; */
     /* white-space: nowrap;
@@ -674,4 +675,22 @@ body #mbbutton {
 #actualFelNev{
     font-style: italic;
     color: blue;
+}
+
+#kereses{
+    display: flex;
+}
+
+.keresendoNev{
+    display: block;
+    text-align: center;
+    width: 454px;
+    min-height: 62px;
+    max-height: 74px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 6px solid black;
+    font-size: 25px;
+    padding: 0;
+    margin-right: 10px;
 }

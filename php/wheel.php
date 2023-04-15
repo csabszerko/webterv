@@ -29,7 +29,8 @@
             <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="30px" height="30px"></a>
             <a href="./wheel.php" title="Szerencsekerék" class="current"><img src="../kepek/kerek.png" width="30px" height="30px"></a>
             <a href="./stats.php" title="A majmokról"><img src="../kepek/monkey.png" width="30px" height="30px"></a>
-            <a href="./profil.php" title="Saját Profil"> <img src="../kepek/profil.png" width="30px" height="30px"></a>   
+            <a href="./profil.php" title="Saját Profil"> <img src="../kepek/profil.png" width="30px" height="30px"></a> 
+            <a href="./kereses.php" title="Keresés"><img src="../kepek/nagyito.png" width="30px" height="30px"></a>    
             <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
         </div>
     </nav>
