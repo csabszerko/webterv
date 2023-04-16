@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/inventoryManager.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."..//php/handyFunctions.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."..//php/inventoryManager.php");
 
 $users = beolvas();
 if(isset($_POST["newUsername"]))
@@ -29,7 +29,7 @@ if(isset($_POST["newUsername"]))
             }
             writeInventoryFile($inventories);
             $user->username = $_POST["newUsername"];
-            header('Location: /webterv/php/profil.php');
+            header('Location: ..//php/profil.php');
         }
     }
 }

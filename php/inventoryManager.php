@@ -1,12 +1,12 @@
 <?php
-    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
+    include_once($_SERVER["DOCUMENT_ROOT"]."..//php/handyFunctions.php");
     if(isset($_COOKIE["kuki"]))
     {
         checkCookie($_COOKIE["kuki"]);
     }
     else
     {
-        header('Location: /webterv/html/index.html');
+        header('Location: ..//html/index.html');
     }
 
     class Inventory
@@ -23,7 +23,7 @@
 
     function readInventoryFile()
     {
-        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/inventories.csv", "r")) != false)
+        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."..//adatok/inventories.csv", "r")) != false)
         {
             //beolvasom a filet egy tombbe
             $inventories = array();
@@ -65,7 +65,7 @@
 
     function writeInventoryFile($inventories)
     {
-        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/inventories.csv", "w")) != false)
+        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."..//adatok/inventories.csv", "w")) != false)
         {
             // echo "ez meg gatya";
             //kiirom a filet a tombbol
