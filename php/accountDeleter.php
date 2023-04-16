@@ -31,4 +31,5 @@ if($_POST["toroljemAzAccot"] == true)
     }
 }
 kiir($users);
+header('Location: /webterv/html/index.html');
 ?>

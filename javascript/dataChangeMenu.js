@@ -87,5 +87,5 @@ function deleteAccount() {
             body: data
         }
     );
-    window.location="/webterv/html/index.html";
+    // window.location="/webterv/html/index.html";
 }
