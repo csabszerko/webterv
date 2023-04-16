@@ -27,8 +27,8 @@ if($_POST["toroljemAzAccot"])
                 }
             }
             writeInventoryFile($inventories);
-            kiir($users);
         }
     }
 }
+kiir($users);
 ?>
