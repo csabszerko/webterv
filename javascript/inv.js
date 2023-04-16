@@ -122,7 +122,7 @@ function saveInv() {
     let data = new FormData();
     data.append("invTartalom",myList.innerHTML);
 
-    fetch("/webterv/php/inventoryManager.php",
+    fetch("../php/inventoryManager.php",
         {
             method: "POST",
             body: data
@@ -134,7 +134,7 @@ function delInv() {
     let data = new FormData();
     data.append("toroljem",torold);
 
-    fetch("/webterv/php/inventoryManager.php",
+    fetch("../php/inventoryManager.php",
         {
             method: "POST",
             body: data

@@ -15,7 +15,7 @@
 
     function beolvas()
     {
-        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/users.csv", "r")) != false)
+        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."..//adatok/users.csv", "r")) != false)
         {
             //beolvasom a filet egy tombbe
             $users = array();
@@ -35,7 +35,7 @@
 
     function kiir($users)
     {
-        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."/webterv/adatok/users.csv", "w")) != false)
+        if(($file = fopen($_SERVER["DOCUMENT_ROOT"]."..//adatok/users.csv", "w")) != false)
         {
             // echo "ez meg gatya";
             //kiirom a filet a tombbol
@@ -68,7 +68,7 @@
                 return;
             }
         }
-        header('Location: /webterv/html/index.html');
+        header('Location: ..//html/index.html');
     }
 
     function getUserName()

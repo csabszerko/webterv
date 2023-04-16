@@ -1,6 +1,6 @@
 <?php
-    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/inventoryManager.php");
+    include_once($_SERVER["DOCUMENT_ROOT"]."..//php/handyFunctions.php");
+    include_once($_SERVER["DOCUMENT_ROOT"]."..//php/inventoryManager.php");
 
     // updateInventory("");
     // writeInventoryFile(readInventoryFile());
@@ -10,7 +10,7 @@
     }
     else
     {
-        header('Location: /webterv/html/index.html');
+        header('Location: ..//html/index.html');
     }
 ?>
 
