@@ -20,7 +20,7 @@
     <link rel="icon"  href="../kepek/rloi_mc.png">
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Stats</title>
+    <title>A majmokról</title>
 </head>
 <body>
     <nav class="navbar">

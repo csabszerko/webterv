@@ -57,7 +57,7 @@
         </p>
         <p class=tutorial>
             A <a href="./profil.php" title="Saját Profil"><img src="../kepek/profil.png" width="20px" height="20px"></a>
-            fül alatt meg tudod változtatni az adataid illetve <em>törölheted</em> a fiókod.
+            fül alatt meg tudod változtatni a felhasználóneved, a jelszavad, illetve <em>törölheted</em> a fiókod.
         </p>
         <p class=tutorial>
             Az oldalról kijelentkezni a <a href="./logout.php" title="Kijelentkezés"><img src="../kepek/logout.png" width="20px" height="20px"></a>

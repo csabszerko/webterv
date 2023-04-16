@@ -22,7 +22,7 @@
     <link rel="icon"  href="../kepek/rloi_mc.png">
     <link rel="stylesheet" href="../css/styles.css">
 
-    <title>Profil</title>
+    <title>Saját Profil</title>
 </head>
 
 <body>
@@ -39,7 +39,6 @@
     <main id="homepagemain">
         
         <!-- <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep"> -->
-
         <p id="displayFelNev"><?php print("Üdvözöllek a profilodon " . "<span id=actualFelNev>" . getUserName() . "</span>!"); ?></p>
         <button id="changeName" class="changeBtn">Új név</button>
         <button id="changePass" class="changeBtn">Új jelszó</button>
