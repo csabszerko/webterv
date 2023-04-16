@@ -45,11 +45,13 @@
         
         <strong>Az oldal használata</strong>
         <p>
-            A majmok gyűjtését a <a href="./wheel.php"><img src="../kepek/kerek.png" width="30px" height="30px"></a> fül alatt kezdheted meg. Egy véletlenszerű majmot nyerhetsz egyedi névvel.
-            A majmod eltárolódik a <a href="./inventory.php"><img src="../kepek/inventory.png" width="30px" height="30px"><a> fülben.
-            Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat.
-            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <a href="./stats.php"><img src="../kepek/monkey.png" width="30px" height="30px"><a> fület!
-            Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
+            A majmok gyűjtését a <a href="./wheel.php"><img src="../kepek/kerek.png" width="20px" height="20px"></a> fül alatt kezdheted meg. <br> Egy véletlenszerű majmot nyerhetsz egyedi névvel. <br>
+            A majmod eltárolódik a <a href="./inventory.php"><img src="../kepek/inventory.png" width="20px" height="20px"><a> fülben.
+            Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat. <br> Mások raktárát a <a href="./kereses.php"><img src="../kepek/nagyito.png" width="20px" height="20px"><a>
+            fül alatt tekintheted meg. Itt rákereshetsz egy felhasználónévre és megtekintheted az általuk összegyűjtött majmokat.
+            <br> Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <a href="./stats.php"><img src="../kepek/monkey.png" width="20px" height="20px"><a> fület!
+            Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat. <br> A <a href="./profil.php"><img src="../kepek/profil.png" width="20px" height="20px"><a>
+            fül alatt meg tudod változtatni az adataid illetve <em>törölheted</em> a fiókod.
         </p>
 
         <!--<div id="mbcontainer">
