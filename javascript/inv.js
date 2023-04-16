@@ -10,7 +10,6 @@ var storedInv = localStorage.getItem('inventory');
 
 const vezNev = ["Lápi","Kapolcs","Illés","Virág","Gelencsér", "Lakatos", "Bagacsi", "Lopodi", "Raffai", "Zsoldos", "Miksi", "Kab", "Pap","Budai","Foltos","Lantos","Lapp","Mondok","Pupák","Sonkolyos","Csápi","Kalapos","Galamb","Rozs","Mészöly"];
 const kerNev = ["Lambert","Huba","Kázmér","Illés","Ármin","Krisztián","Tamás", "Ulrich", "Herold", "Botond", "Alajos", "Mór", "Szabi", "Leopold","Balambér","Gilbert","Taksony","Habakuk","Tódor","Tóbiás","Juszuf","Barni","Kázmér","Oszvald","Tihamér","عبد المجيد"];
-
 function kerekMajmot(ujKepId){
 
     myList.innerHTML="";
@@ -18,6 +17,7 @@ function kerekMajmot(ujKepId){
     const img = document.createElement("img");
     img.width = 50;
     img.height = 50;
+    img.alt="";
     if(ujKepId==-1)
     {
         img.src="../kepek/majom" + (Math.floor(Math.random() * 20) +1)+ ".jpg";
