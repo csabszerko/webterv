@@ -86,7 +86,7 @@ deleteGomb.addEventListener("click", function(e){
 
         // delCounter=0;
 
-        // window.location="..//html/index.html";
+        // window.location="/webterv/html/index.html";
     }
     else if(delCounter==3){
         // deleteGomb.innerText = "Jelentkezz be újra";

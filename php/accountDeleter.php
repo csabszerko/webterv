@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"]."..//php/handyFunctions.php");
-include_once($_SERVER["DOCUMENT_ROOT"]."..//php/inventoryManager.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/inventoryManager.php");
 
 $counter = 0;
 $users = beolvas();
@@ -31,5 +31,5 @@ if($_POST["toroljemAzAccot"] == true)
     }
 }
 kiir($users);
-// header('Location: ..//html/index.html');
+// header('Location: /webterv/html/index.html');
 ?>
