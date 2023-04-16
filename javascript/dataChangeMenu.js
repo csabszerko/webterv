@@ -68,9 +68,7 @@ deleteGomb.addEventListener("click", function(e){
     else if(delCounter==2){
         torold=true;
         deleteAccount();
-        torold=false;
         // deleteGomb.innerText = "Done";
-        delCounter=0;
     }
 });
 
@@ -87,5 +85,7 @@ function deleteAccount() {
             body: data
         }
     );
-    // window.location="/webterv/html/index.html";
+    torold=false;
+    delCounter=0;
+    window.location="/webterv/php/profil.php";
 }
