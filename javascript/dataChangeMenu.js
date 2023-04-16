@@ -71,7 +71,7 @@ deleteGomb.addEventListener("click", function(e){
         torold=false;
         // deleteGomb.innerText = "Done";
         delCounter=0;
-        window.location="/webterv/html/index.html";
+        // window.location="/webterv/html/index.html";
     }
 });
 
