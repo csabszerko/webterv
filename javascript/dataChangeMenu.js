@@ -22,6 +22,9 @@ nevGomb.addEventListener("click", function(e){
     nevGombCounter++;
     if(nevGombCounter==1)
     { 
+        delCounter=0;
+        deleteGomb.innerText = "Felhasználó Törlése";
+        deleteGomb.style.backgroundColor = "coral";
         show(nevMenu);
         show(deleteGomb);
         nevGomb.innerText = "Vissza";
@@ -43,6 +46,9 @@ jelszoGomb.addEventListener("click", function(e){
     jelszoGombCounter++;
     if(jelszoGombCounter==1)
     { 
+        delCounter=0;
+        deleteGomb.innerText = "Felhasználó Törlése";
+        deleteGomb.style.backgroundColor = "coral";
         show(jelszoMenu);
         show(deleteGomb);
         jelszoGomb.innerText = "Vissza";

@@ -1,15 +1,15 @@
 <?php
-    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
-    if(isset($_COOKIE["kuki"]))
-    {
-        // echo "ez meg jo";
-        checkCookie($_COOKIE["kuki"]);
-    }
-    else
-    {
-        header('Location: /webterv/html/index.html');
-        echo "itt a hiba";
-    }
+    // include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
+    // if(isset($_COOKIE["kuki"]))
+    // {
+    //     // echo "ez meg jo";
+    //     checkCookie($_COOKIE["kuki"]);
+    // }
+    // else
+    // {
+    //     header('Location: /webterv/html/index.html');
+    //     echo "itt a hiba";
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -37,23 +37,36 @@
             <a href="../php/logout.php" id="logoutBtn" title="Kijelentkezés"><img src="../kepek/logout.png" width="30px" height="30px"></a>
     </nav>
     <main id="homepagemain">
-        <strong><?php print("Üdvözöllek " . getUserName() ."!")?></strong>
-        <p>
-            Ez az oldal a majmok gyűjtéséről szól.<br>
-            Az oldalt Kiss Csaba és Masa Roland készítette. 
-        </p>
+        <!-- <strong><?php //print("Üdvözöllek " . getUserName() ."!")?></strong> -->
         
         <strong>Az oldal használata</strong>
-        <p>
-            A majmok gyűjtését a <a href="./wheel.php"><img src="../kepek/kerek.png" width="20px" height="20px"></a> fül alatt kezdheted meg. <br> Egy véletlenszerű majmot nyerhetsz egyedi névvel. <br>
-            A majmod eltárolódik a <a href="./inventory.php"><img src="../kepek/inventory.png" width="20px" height="20px"><a> fülben.
-            Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat. <br> Mások raktárát a <a href="./kereses.php"><img src="../kepek/nagyito.png" width="20px" height="20px"><a>
+        <p class=tutorial>
+            A majmok gyűjtését a <a href="./wheel.php" title="Szerencsekerék"><img src="../kepek/kerek.png" width="20px" height="20px"></a> fül alatt kezdheted meg. <br> Egy véletlenszerű majmot nyerhetsz egyedi névvel.
+        </p>
+        <p class=tutorial>
+            A nyert majmok eltárolódnak a <a href="./inventory.php" title="Raktár"><img src="../kepek/inventory.png" width="20px" height="20px"></a> fülben.
+            Itt egy törlés gomb található, mellyel <em>törölheted</em> az eddig megszerzett majmokat.
+        </p>
+        <p class=tutorial>
+            Mások raktárát a <a href="./kereses.php" title="Keresés"><img src="../kepek/nagyito.png" width="20px" height="20px"></a>
             fül alatt tekintheted meg. Itt rákereshetsz egy felhasználónévre és megtekintheted az általuk összegyűjtött majmokat.
-            <br> Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <a href="./stats.php"><img src="../kepek/monkey.png" width="20px" height="20px"><a> fület!
-            Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat. <br> A <a href="./profil.php"><img src="../kepek/profil.png" width="20px" height="20px"><a>
+        </p>
+        <p class=tutorial>
+            Ha többet szeretnél megtudni a megszerezhető majmokról, akkor látogasd meg a <a href="./stats.php" title="A majmokról"><img src="../kepek/monkey.png" width="20px" height="20px"></a> fület!
+            Itt a képek alapján tudod azonosítani a különböző majomtípusokat és megismerni tulajdonságaikat.
+        </p>
+        <p class=tutorial>
+            A <a href="./profil.php" title="Saját Profil"><img src="../kepek/profil.png" width="20px" height="20px"></a>
             fül alatt meg tudod változtatni az adataid illetve <em>törölheted</em> a fiókod.
         </p>
-
+        <p class=tutorial>
+            Az oldalról kijelentkezni a <a href="./logout.php" title="Kijelentkezés"><img src="../kepek/logout.png" width="20px" height="20px"></a>
+            gombbal tudsz.
+            
+        </p>
+        <p>
+            Az oldalt Kiss Csaba és Masa Roland készítette. 
+        </p>
         <!--<div id="mbcontainer">
             <div class="messageboard" id="mbdiv">
                 gatya

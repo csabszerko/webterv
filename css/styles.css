@@ -484,11 +484,13 @@ table{
 strong{
     font-size: 72px;
     text-align: center;
-    color: white;
-    width: fit-content;
+    color: black;
+    width: 700px;
     padding: 20px 20px;
     border-radius: 15px;
     background-color: rgb(248, 195, 148);
+    border: 6px solid black;
+    margin: 15px 0;
 }
 
 strong~strong{
@@ -516,6 +518,9 @@ strong~strong{
 
 #homepagemain em{
     color: crimson;
+}
+#homepagemain p{
+    margin: 25px 0;
 }
 
 video {
@@ -697,4 +702,13 @@ body #mbbutton {
 
 #deleteAcc{
     background-color: coral;
+}
+
+.tutorial {
+    text-align: left;
+    padding: 20px 20px;
+    border-radius: 15px;
+    background-color: white;
+    border: 6px solid black;
+    margin: 15px 0;
 }
