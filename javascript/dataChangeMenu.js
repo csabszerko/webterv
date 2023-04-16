@@ -1,6 +1,8 @@
 const nevMenu = document.getElementById("nevvaltoztatas");
 const jelszoMenu = document.getElementById("jelszovaltoztatas");
 
+const nevKiiras = document.getElementById("displayFelNev");
+
 const nevGomb = document.getElementById("changeName");
 const jelszoGomb = document.getElementById("changePass");
 
@@ -50,6 +52,7 @@ jelszoGomb.addEventListener("click", function(e){
     else if(jelszoGombCounter==2){
         hide(jelszoMenu);
         hide(deleteGomb);
+        
         jelszoGomb.innerText = "Jelszóváltoztatás";
         show(nevGomb);
         show(deleteGomb);
@@ -68,7 +71,21 @@ deleteGomb.addEventListener("click", function(e){
     else if(delCounter==2){
         torold=true;
         deleteAccount();
-        // deleteGomb.innerText = "Done";
+        torold=false;
+        deleteGomb.style.backgroundColor = "crimson";
+        hide(jelszoGomb);
+        hide(nevGomb);
+        nevKiiras.innerText="Sikeresen kitörölted a fiókod!";
+        deleteGomb.innerText = "Kijelentkezés";
+
+        // delCounter=0;
+
+        // window.location="/webterv/html/index.html";
+    }
+    else if(delCounter==3){
+        // deleteGomb.innerText = "Jelentkezz be újra";
+        delCounter=0;
+        window.location="/webterv/html/index.html";
     }
 });
 
@@ -85,7 +102,4 @@ function deleteAccount() {
             body: data
         }
     );
-    torold=false;
-    delCounter=0;
-    window.location="/webterv/php/profil.php";
 }
