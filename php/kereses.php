@@ -1,5 +1,5 @@
 <?php
-    include_once($_SERVER["DOCUMENT_ROOT"]."..//php/inventoryManager.php");
+    include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/inventoryManager.php");
     // if(isset($_COOKIE["kuki"]))
     // {
     //     // echo "ez meg jo";
@@ -7,7 +7,7 @@
     // }
     // else
     // {
-    //     header('Location: ..//html/index.html');
+    //     header('Location: /webterv/html/index.html');
     //     echo "itt a hiba";
     // }
     $invToShow = "";

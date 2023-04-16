@@ -1,5 +1,5 @@
 <?php
-include_once($_SERVER["DOCUMENT_ROOT"]."..//php/handyFunctions.php");
+include_once($_SERVER["DOCUMENT_ROOT"]."/webterv/php/handyFunctions.php");
 
 $users = beolvas();
 if(isset($_POST["newPassword"]) && isset($_POST["newPassword2"]))
@@ -16,7 +16,7 @@ if(isset($_POST["newPassword"]) && isset($_POST["newPassword2"]))
                 }else
                 {
                     $user->password = password_hash($_POST["newPassword"], PASSWORD_DEFAULT);
-                    header('Location: ..//html/index.html');
+                    header('Location: /webterv/html/index.html');
                 }
             }
         }
