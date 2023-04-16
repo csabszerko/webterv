@@ -86,12 +86,12 @@ deleteGomb.addEventListener("click", function(e){
 
         // delCounter=0;
 
-        // window.location="/webterv/html/index.html";
+        // window.location="..//html/index.html";
     }
     else if(delCounter==3){
         // deleteGomb.innerText = "Jelentkezz be újra";
         delCounter=0;
-        window.location="/webterv/html/index.html";
+        window.location="../html/index.html";
     }
 });
 
@@ -102,7 +102,7 @@ function deleteAccount() {
     let data = new FormData();
     data.append("toroljemAzAccot",torold);
 
-    fetch("/webterv/php/accountDeleter.php",
+    fetch("../php/accountDeleter.php",
         {
             method: "POST",
             body: data

@@ -1,3 +1,3 @@
 <?php
-    header('Location: /webterv/html/index.html');
+    header('Location: ..//html/index.html');
 ?>
