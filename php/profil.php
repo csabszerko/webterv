@@ -38,11 +38,11 @@
     </nav>
     <main id="homepagemain">
         
-        <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep">
+        <!-- <img src="../kepek/majom13.jpg" alt="itt amugy van egy kep" id="profilkep"> -->
 
         <p id="displayFelNev"><?php print("Üdvözöllek a profilodon " . "<span id=actualFelNev>" . getUserName() . "</span>!"); ?></p>
-        <button id="changeName" class="changeBtn">Névváltoztatás</button>
-        <button id="changePass" class="changeBtn">Jelszóváltoztatás</button>
+        <button id="changeName" class="changeBtn">Új név</button>
+        <button id="changePass" class="changeBtn">Új jelszó</button>
 
         <form id="nevvaltoztatas" method="POST" action="../php/nevChange.php"> 
             <input class="ujszoveg" type="text"  placeholder="új felhasználónév" required name="newUsername"> 
